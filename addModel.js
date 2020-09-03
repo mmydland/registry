@@ -69,7 +69,13 @@ const addModel = (file) => {
     if (!fs.existsSync(folder)) {
       fs.mkdirSync(folder)
     }
-    fs.copyFileSync(file, folder + '/' + path.basename(file))
+
+    let fileToAdd = folder + '/' + path.basename(file)
+    if (fs.existsSyncxists(fileToAdd)) {
+      console.log('WARN. Target file name exists. You must change the file names when updating versions !!.')
+      fileToAdd += '.json'
+    }
+    fs.copyFileSync(fileToAdd)
 
     index[id] = {
       path: folder + '/' + path.basename(file),
