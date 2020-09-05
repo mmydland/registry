@@ -45,6 +45,7 @@ const getDependencies = (rootJson) => {
 }
 
 /**
+ * @description Adds a file to the model repo following the folder convention pattern, and updates the model-index.json
  * @param {string} file
  */
 const addModel = (file) => {
