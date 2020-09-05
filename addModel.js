@@ -2,6 +2,11 @@ const fs = require('fs')
 const path = require('path')
 
 /**
+ * @typedef {{ path: string, depends: Array<string>}} indexItem
+ * @typedef { Object.<string, indexItem>} modelIndex
+ */
+
+/**
  * @description "removes the dtmi prefix and the version, and replaces : with -"
  * @param {string} dtmi
  * @returns {string}
@@ -17,6 +22,9 @@ const dtmi2folder = (dtmi) => {
  * @returns {Array<string>}
  */
 const getDependencies = (rootJson) => {
+  /**
+   * @type {Array<string>}
+   */
   const deps = []
   if (rootJson.extends) {
     if (Array.isArray(rootJson.extends)) {
@@ -46,6 +54,9 @@ const addModel = (file) => {
   }
   const rootJson = JSON.parse(fs.readFileSync(file, 'utf-8'))
 
+  /**
+   * @type {modelIndex}
+   */
   const index = JSON.parse(fs.readFileSync('model-index.json', 'utf-8'))
 
   if (rootJson['@context'] && rootJson['@context'] === 'dtmi:dtdl:context;2') {
