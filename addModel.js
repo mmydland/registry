@@ -4,12 +4,15 @@ const path = require('path')
 /**
  * @description "removes the dtmi prefix and the version, and replaces : with -"
  * @param {string} dtmi
- * @returns {string}
+ * @returns {(string,string)}
  */
-const dtmi2folder = (dtmi) => {
-  const parts = dtmi.toLowerCase().split(';')[0].split(':')
-  parts.shift()
-  return parts.join('-')
+const dtmi2path = (dtmi) => {
+  const idAndVersion = dtmi.toLowerCase().split(';')
+  const ids = idAndVersion[0].split(':')
+  ids.shift()
+  const modelFolder = ids.join('-')
+  const version = idAndVersion[1]
+  return { modelFolder, version }
 }
 
 /**
@@ -25,14 +28,16 @@ const getDependencies = (rootJson) => {
       deps.push(rootJson.extends)
     }
   }
-  const comps = rootJson.contents.filter(c => c['@type'] === 'Component')
-  comps.forEach(c => {
-    if (typeof c.schema !== 'object') {
-      if (deps.indexOf(c.schema) === -1) {
-        deps.push(c.schema)
+  if (rootJson.contents) {
+    const comps = rootJson.contents.filter(c => c['@type'] === 'Component')
+    comps.forEach(c => {
+      if (typeof c.schema !== 'object') {
+        if (deps.indexOf(c.schema) === -1) {
+          deps.push(c.schema)
+        }
       }
-    }
-  })
+    })
+  }
   return deps
 }
 
@@ -45,7 +50,6 @@ const addModel = (file) => {
     process.exit()
   }
   const rootJson = JSON.parse(fs.readFileSync(file, 'utf-8'))
-
   const index = JSON.parse(fs.readFileSync('model-index.json', 'utf-8'))
 
   if (rootJson['@context'] && rootJson['@context'] === 'dtmi:dtdl:context;2') {
@@ -65,16 +69,14 @@ const addModel = (file) => {
       }
     })
 
-    const folder = 'models/' + dtmi2folder(id)
+    const { modelFolder, version } = dtmi2path(id)
+    const folder = path.join('models/',modelFolder)
     if (!fs.existsSync(folder)) {
       fs.mkdirSync(folder)
     }
 
-    let fileToAdd = folder + '/' + path.basename(file)
-    if (fs.existsSync(fileToAdd)) {
-      console.log('WARN. Target file name exists. You must change the file names when updating versions !!.')
-      fileToAdd += '.json'
-    }
+    const fileToAdd = path.join(folder, `${version}.json`)
+
     fs.copyFileSync(file, fileToAdd)
 
     index[id] = {
@@ -83,7 +85,7 @@ const addModel = (file) => {
     }
 
     fs.writeFileSync('model-index.json', JSON.stringify(index, null, 2))
-    console.log(`Model ${id} added successfully.`)
+    console.log(`Model ${id} added successfully to ${fileToAdd}.`)
   } else {
     console.error(`File ${file} is not a valid DTDL 2 interface`)
   }
