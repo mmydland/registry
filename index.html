@@ -9,33 +9,14 @@
 
 <body>
     <h1>IoT Models Registry</h1>
-    <div>
-        Resolve DTDL models using a global model registry <a href="model-index.json">model-index.json</a>
-    </div>
     <hr />
-    <div id="rendered">
-
+    <div id="main">
+        <input type="text" id="q" size="50" value="dtmi:azure:DeviceManagement:DeviceInformation;1">
+        <button id="search">Search</button>
+        <div id="results"></div>
     </div>
-    <script id="models-list-template" type="x-tmpl-mustache">
-      <ul>
-        {{#.}}
-          <span>{{key}}</span>
-          <li id="{{dtmi}}">
-            <div>
-            <a href="{{path}}" title="{{dtmi}}" target="_blank">{{dtmi}}</a>
-            </div> 
-            <div class="depends">
-              <ul>
-                {{#depends}}
-                 <li>{{.}}</li>
-                {{/depends}}
-              </ul>
-            </div>
-          </li>
-        {{/.}}
-      </ul>
-    </script>
-    <script src="https://unpkg.com/mustache@latest"></script>
+    
+    
     <script src="index.js"></script>
     <hr />
     <div>

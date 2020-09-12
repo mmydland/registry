@@ -1,6 +1,6 @@
 for f in "$@"
 do
-    if [[ $f == *"models/"* ]]
+    if [[ $f == *"dtmi/"* ]]
     then
         dtdl2-validator $f local
     fi

@@ -1,9 +1,14 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:com:example:thermostat;1",
+  "@id": "dtmi:com:SmartThings:smartspoon;2",
   "@type": "Interface",
-  "displayName": "Thermostat",
+  "displayName": "Smart Spoon",
   "contents": [
+    { 
+      "@type" : "Property", 
+      "name" : "timesUsedThisWeek", 
+      "schema" : "integer" 
+    },
     {
       "@type": "Telemetry",
       "name": "temperature",
@@ -21,13 +26,6 @@
         "name": "delay",
         "schema": "integer"
       }
-    },
-    {
-      "@type": "Component",
-      "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1",
-      "name": "deviceInformation",
-      "displayName": "Device Information interface",
-      "description": "Optional interface with basic device hardware information."
     }
   ]
 }

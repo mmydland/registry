@@ -1,5 +1,17 @@
 (async () => {
-  let index = []
+  /**
+ * @description "Converts DTMI to folder/file convention"
+ * @param {string} dtmi
+ * @returns {(string,string)}
+ */
+  const dtmi2path = (dtmi) => {
+    const idAndVersion = dtmi.toLowerCase().split(';')
+    const ids = idAndVersion[0].split(':')
+    const fileName = `${ids[ids.length - 1]}-${idAndVersion[1]}.json`
+    ids.pop()
+    const modelFolder = ids.join('/')
+    return { modelFolder, fileName }
+  }
 
   const gbid = (id) => {
     const el = document.getElementById(id)
@@ -9,7 +21,7 @@
     return el
   }
 
-  const loadIndex = (path) => {
+  const loadModel = path => {
     return new Promise((resolve, reject) => {
       window.fetch(path)
         .then(r => r.json())
@@ -18,24 +30,20 @@
     })
   }
 
-  const bindTemplate = (template, models, target) => {
-    gbid(target).innerHTML = Mustache.render(gbid(template).innerHTML, models)
-  }
-
-  const init = async () => {
-    const path = 'model-index.json'
-    index = await loadIndex(path)
-
-    const modelArray = Object.keys(index).map(k => {
-      return {
-        dtmi: k,
-        path: index[k].path,
-        depends: index[k].depends
+  const init = () => {
+    const button = gbid('search')
+    button.onclick = async () => {
+      const query = gbid('q')
+      const results = gbid('results')
+      const { modelFolder, fileName } = dtmi2path(query.value)
+      try {
+        const json = await loadModel(`${modelFolder}/${fileName}`)
+        results.innerHTML = `${json['@id']} found in <a href=${modelFolder}/${fileName}>${modelFolder}/${fileName}</a>`
+      } catch (e) {
+        console.log(e)
+        results.innerText = `Not Found at ${modelFolder}/${fileName}`
       }
-    })
-    modelArray.sort(function (a, b) { return (a.dtmi > b.dtmi) ? 1 : -1 })
-
-    bindTemplate('models-list-template', modelArray, 'rendered')
+    }
   }
-  await init()
+  init()
 })()
