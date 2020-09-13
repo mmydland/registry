@@ -60,6 +60,11 @@ const addModel = (file) => {
       const { modelFolder, fileName } = dtmi2path(d)
       if (fs.existsSync(path.join(modelFolder, fileName))) {
         console.log(`Dependency ${d} found in the index`)
+        const model = JSON.parse(fs.readFileSync(path.join(modelFolder, fileName), 'utf-8'))
+        if (model['@id'] !== d) {
+          console.log(`ERROR: LowerCase issue with dependent id ${d}. Was ${model['@id']}. Aborting`)
+          process.exit()
+        }
       } else {
         console.error(`ERROR: Dependency ${d} NOT found. Aborting`)
         process.exit()
