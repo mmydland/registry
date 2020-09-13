@@ -4,12 +4,12 @@ do
     then
         dtdl2-validator /f=$f /resolver=local
         echo $?
-        if [ $? -neq 0 ]
+        if [ $? -eq 0 ]
         then
+            echo "validation ok"
+        else
             echo "error validating model"
             exit 1
-        else
-            echo "validation ok"
         fi
     fi
 done
