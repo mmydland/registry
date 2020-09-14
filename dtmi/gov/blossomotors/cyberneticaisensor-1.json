@@ -1,0 +1,77 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:blossomotors:cyberneticaisensor;1",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:net:microlutions:networkedsystemsensor;7",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    }
+  ]
+}

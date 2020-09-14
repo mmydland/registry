@@ -1,0 +1,86 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:crystalforce:telescopesystemmodule;5",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:gov:seedrecords:sensorynetwork;2",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    },
+    {
+      "@type": "Component",
+      "name": "laptopcomputerizedprobepack",
+      "schema": "dtmi:gov:crystalcoms:laptopcomputerizedprobepack;1",
+      "displayName": "laptopcomputerizedprobepack",
+      "description": "laptopcomputerizedprobepack"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork2",
+      "schema": "dtmi:edu:cliffgold:sensorynetwork;1",
+      "displayName": "sensorynetwork2",
+      "description": "sensorynetwork2"
+    }
+  ]
+}

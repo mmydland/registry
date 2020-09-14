@@ -1,0 +1,90 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:alpite:compunetworkedsensorscanner;6",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:org:microlutions:aisensoryprocessor;4",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    }
+  ]
+}

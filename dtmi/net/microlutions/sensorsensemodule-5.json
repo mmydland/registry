@@ -1,0 +1,62 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:microlutions:sensorsensemodule;5",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    }
+  ]
+}

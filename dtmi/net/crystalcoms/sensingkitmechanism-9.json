@@ -1,0 +1,99 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:crystalcoms:sensingkitmechanism;9",
+  "@type": "Interface",
+  "displayName": "Sensingkitmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:net:goldustries:compunetworkedsensorscanner;5",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:gov:seedrecords:aicompuunit;7",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    }
+  ]
+}

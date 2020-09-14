@@ -1,0 +1,105 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:greenlife:analyzingsensingcompassunit;3",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration2",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate2",
+      "request": {
+        "name": "targetsetFlowRate2",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:alpite:locatorprocessor;10",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

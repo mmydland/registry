@@ -1,0 +1,49 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:seedrecords:cyberneticsensormodule;6",
+  "@type": "Interface",
+  "displayName": "Cyberneticsensormodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:goldustries:telescopesystemmodule;6",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:net:accenco:sensorsensemodule;3",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

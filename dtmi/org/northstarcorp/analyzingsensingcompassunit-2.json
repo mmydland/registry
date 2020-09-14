@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:northstarcorp:analyzingsensingcompassunit;2",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:com:alpite:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

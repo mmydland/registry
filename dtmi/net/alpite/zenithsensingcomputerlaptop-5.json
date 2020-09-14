@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:alpite:zenithsensingcomputerlaptop;5",
+  "@type": "Interface",
+  "displayName": "Zenithsensingcomputerlaptop",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:ghostnite:locatorprocessor;5",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:org:venusmotors:analyticaldiagnosticiansystem;3",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    }
+  ]
+}

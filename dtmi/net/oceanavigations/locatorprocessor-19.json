@@ -1,0 +1,69 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:oceanavigations:locatorprocessor;19",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:org:oceanavigations:analyzingsensingcompassunit;3",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    }
+  ]
+}

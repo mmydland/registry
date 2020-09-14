@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:ghostnite:cyberneticaisensor;6",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:com:oceanavigations:scanningcomputersensor;9",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:alpite:locatorprocessor;6",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

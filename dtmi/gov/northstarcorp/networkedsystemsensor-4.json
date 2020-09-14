@@ -1,0 +1,61 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:northstarcorp:networkedsystemsensor;4",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:net:alpite:sensorsensemodule;1",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

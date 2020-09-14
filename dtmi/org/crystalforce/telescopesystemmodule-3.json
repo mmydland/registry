@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:crystalforce:telescopesystemmodule;3",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticsensormodule",
+      "schema": "dtmi:edu:oceanavigations:cyberneticsensormodule;3",
+      "displayName": "cyberneticsensormodule",
+      "description": "cyberneticsensormodule"
+    }
+  ]
+}

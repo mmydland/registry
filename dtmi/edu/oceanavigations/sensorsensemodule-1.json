@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:oceanavigations:sensorsensemodule;1",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:com:oceanavigations:zenithsensordiagnostician;1",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:gov:northstarcorp:scanningcomputersensor;1",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    }
+  ]
+}

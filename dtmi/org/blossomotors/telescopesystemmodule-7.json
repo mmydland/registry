@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:blossomotors:telescopesystemmodule;7",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:gov:quaductions:cyberneticaisensor;3",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:gov:quaductions:sensorynetwork;3",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

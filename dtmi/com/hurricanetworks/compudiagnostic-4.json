@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:hurricanetworks:compudiagnostic;4",
+  "@type": "Interface",
+  "displayName": "Compudiagnostic",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:edu:quaductions:sensorsensemodule;2",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

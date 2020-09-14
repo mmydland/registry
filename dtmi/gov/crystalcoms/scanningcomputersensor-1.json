@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:crystalcoms:scanningcomputersensor;1",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:gov:microlutions:aisensoryprocessor;3",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticsensormodule",
+      "schema": "dtmi:net:shadowhouse:cyberneticsensormodule;4",
+      "displayName": "cyberneticsensormodule",
+      "description": "cyberneticsensormodule"
+    }
+  ]
+}

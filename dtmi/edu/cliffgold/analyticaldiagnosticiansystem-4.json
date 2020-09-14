@@ -1,0 +1,88 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:cliffgold:analyticaldiagnosticiansystem;4",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle3",
+      "request": {
+        "name": "targetsetTiltAngle3",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:edu:crystalforce:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:marsaviation:analyzingsensingcompassunit;9",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness3",
+      "request": {
+        "name": "targetsetBrightness3",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:edu:quaductions:aisensoryprocessor;6",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:net:northstarcorp:aicompuunit;3",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    }
+  ]
+}

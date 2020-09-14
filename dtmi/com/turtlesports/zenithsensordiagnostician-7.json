@@ -1,0 +1,46 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:turtlesports:zenithsensordiagnostician;7",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:com:greenlife:sensornetworkkit;5",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    }
+  ]
+}

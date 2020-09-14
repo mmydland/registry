@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:oceanavigations:sensornetworkkit;7",
+  "@type": "Interface",
+  "displayName": "Sensornetworkkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:gov:microlutions:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:org:cliffgold:compudiagnostic;5",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    }
+  ]
+}

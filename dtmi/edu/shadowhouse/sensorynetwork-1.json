@@ -1,0 +1,89 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:shadowhouse:sensorynetwork;1",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity2",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity3",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:org:accenco:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:net:microlutions:analyticaldiagnosticiansystem;1",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:crystalforce:analyzingsensingcompassunit;2",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration2",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:net:cliffgold:monitoringpackunit;6",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:net:marsaviation:zenithsensordiagnostician;4",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    }
+  ]
+}

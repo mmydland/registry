@@ -1,0 +1,44 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:accenco:aisensoryprocessor;5",
+  "@type": "Interface",
+  "displayName": "Aisensoryprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    }
+  ]
+}

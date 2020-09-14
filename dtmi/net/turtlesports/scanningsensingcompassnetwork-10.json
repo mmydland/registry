@@ -1,0 +1,65 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:turtlesports:scanningsensingcompassnetwork;10",
+  "@type": "Interface",
+  "displayName": "Scanningsensingcompassnetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:net:seedrecords:analyticaldiagnosticiansystem;1",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:org:shadowhouse:aisensoryprocessor;5",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:com:alpite:zenithsensordiagnostician;3",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:cliffgold:zenithsensingcomputerlaptop;6",
+  "@type": "Interface",
+  "displayName": "Zenithsensingcomputerlaptop",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:edu:alpite:scanningcomputersensor;3",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    }
+  ]
+}

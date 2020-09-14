@@ -1,0 +1,52 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:seedrecords:sensorsensemodule;2",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    }
+  ]
+}

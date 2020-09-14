@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:crystalcoms:analyticaldiagnosticiansystem;5",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:blossomotors:analyzingsystemmechanism;7",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

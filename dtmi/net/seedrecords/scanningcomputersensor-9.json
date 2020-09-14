@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:seedrecords:scanningcomputersensor;9",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "string"
+      }
+    }
+  ]
+}

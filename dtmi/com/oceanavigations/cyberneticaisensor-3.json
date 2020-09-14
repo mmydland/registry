@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:oceanavigations:cyberneticaisensor;3",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:org:hurricanetworks:networkedsystemsensor;2",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:org:oceanavigations:cyberneticaisensor;7",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor2",
+      "schema": "dtmi:org:marsaviation:cyberneticaisensor;3",
+      "displayName": "cyberneticaisensor2",
+      "description": "cyberneticaisensor2"
+    }
+  ]
+}

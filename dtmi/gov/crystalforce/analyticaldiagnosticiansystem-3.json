@@ -1,0 +1,52 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:crystalforce:analyticaldiagnosticiansystem;3",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    }
+  ]
+}

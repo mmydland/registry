@@ -1,0 +1,69 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:turtlesports:aisensoryprocessor;3",
+  "@type": "Interface",
+  "displayName": "Aisensoryprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:edu:quaductions:networkedsystemsensor;2",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    }
+  ]
+}

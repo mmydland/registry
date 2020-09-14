@@ -1,0 +1,61 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:blossomotors:scanningsensingcompassnetwork;2",
+  "@type": "Interface",
+  "displayName": "Scanningsensingcompassnetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:net:microlutions:telescopesystemmodule;2",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

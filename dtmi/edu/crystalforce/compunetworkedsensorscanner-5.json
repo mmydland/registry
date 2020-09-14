@@ -1,0 +1,64 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:crystalforce:compunetworkedsensorscanner;5",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "float"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:alpite:analyticaldiagnosticiansystem;1",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:com:northstarcorp:cyberneticaisensor;1",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:goldustries:telescopesystemmodule;4",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:net:crystalforce:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    }
+  ]
+}

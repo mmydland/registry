@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:accenco:telescopesystemmodule;9",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:phantasmentertainment:locatorprocessor;5",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:org:turtlesports:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

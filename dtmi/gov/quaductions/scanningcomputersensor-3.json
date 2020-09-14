@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:quaductions:scanningcomputersensor;3",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticsensormodule",
+      "schema": "dtmi:edu:northstarcorp:cyberneticsensormodule;4",
+      "displayName": "cyberneticsensormodule",
+      "description": "cyberneticsensormodule"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:edu:crystalcoms:scanningcomputersensor;4",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    }
+  ]
+}

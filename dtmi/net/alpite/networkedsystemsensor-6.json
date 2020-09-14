@@ -1,0 +1,106 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:alpite:networkedsystemsensor;6",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity2",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure2",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure3",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:greenlife:locatorprocessor;9",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:org:northstarcorp:sensorynetwork;3",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

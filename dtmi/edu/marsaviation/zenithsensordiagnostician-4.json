@@ -1,0 +1,49 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:marsaviation:zenithsensordiagnostician;4",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    }
+  ]
+}

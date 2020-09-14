@@ -1,0 +1,103 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:oceanavigations:sensorynetwork;4",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature3",
+      "request": {
+        "name": "targetsetTemperature3",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:gov:crystalforce:networkedsystemsensor;10",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:gov:venusmotors:sensorynetwork;2",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

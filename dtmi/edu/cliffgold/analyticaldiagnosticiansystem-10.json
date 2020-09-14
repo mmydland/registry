@@ -1,0 +1,94 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:cliffgold:analyticaldiagnosticiansystem;10",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity2",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:gov:crystalforce:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:gov:ghostnite:sensorynetwork;4",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:northstarcorp:locatorprocessor;2",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

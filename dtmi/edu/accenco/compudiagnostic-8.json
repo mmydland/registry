@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:accenco:compudiagnostic;8",
+  "@type": "Interface",
+  "displayName": "Compudiagnostic",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:com:seedrecords:telescopesystemmodule;4",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

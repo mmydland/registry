@@ -1,0 +1,103 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:alpite:networkedsystemsensor;14",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:turtlesports:locatorprocessor;7",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

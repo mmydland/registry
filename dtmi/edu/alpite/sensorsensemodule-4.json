@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:alpite:sensorsensemodule;4",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:ghostnite:locatorprocessor;6",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor2",
+      "schema": "dtmi:org:blossomotors:locatorprocessor;3",
+      "displayName": "locatorprocessor2",
+      "description": "locatorprocessor2"
+    }
+  ]
+}

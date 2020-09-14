@@ -1,0 +1,62 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:goldustries:scanningcomputersensor;4",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:crystalcoms:locatorprocessor;3",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:seedrecords:sensornetworkkit;7",
+  "@type": "Interface",
+  "displayName": "Sensornetworkkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:edu:cliffgold:sensorynetwork;6",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:gov:greenlife:sensingkitmechanism;10",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:quaductions:monitoringpackunit;4",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensingcomputerlaptop",
+      "schema": "dtmi:com:shadowhouse:zenithsensingcomputerlaptop;10",
+      "displayName": "zenithsensingcomputerlaptop",
+      "description": "zenithsensingcomputerlaptop"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:org:northstarcorp:compudiagnostic;6",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    }
+  ]
+}

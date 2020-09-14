@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:cliffgold:aisensoryprocessor;4",
+  "@type": "Interface",
+  "displayName": "Aisensoryprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:edu:microlutions:sensingkitmechanism;2",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

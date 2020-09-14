@@ -1,0 +1,87 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:greenlife:laptopcomputerizedprobepack;9",
+  "@type": "Interface",
+  "displayName": "Laptopcomputerizedprobepack",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:com:northstarcorp:sensorsensemodule;3",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:com:seedrecords:aicompuunit;2",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    }
+  ]
+}

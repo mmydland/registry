@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:crystalcoms:analyzingsystemmechanism;2",
+  "@type": "Interface",
+  "displayName": "Analyzingsystemmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate2",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:com:hurricanetworks:compudiagnostic;2",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:gov:quaductions:analyticaldiagnosticiansystem;3",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:alpite:sensorynetwork;1",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    }
+  ]
+}

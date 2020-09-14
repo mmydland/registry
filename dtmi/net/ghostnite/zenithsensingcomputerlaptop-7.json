@@ -1,0 +1,67 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:ghostnite:zenithsensingcomputerlaptop;7",
+  "@type": "Interface",
+  "displayName": "Zenithsensingcomputerlaptop",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:gov:marsaviation:networkedsystemsensor;4",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    }
+  ]
+}

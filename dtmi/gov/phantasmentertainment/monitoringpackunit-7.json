@@ -1,0 +1,59 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:phantasmentertainment:monitoringpackunit;7",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:gov:seedrecords:analyticaldiagnosticiansystem;1",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    }
+  ]
+}

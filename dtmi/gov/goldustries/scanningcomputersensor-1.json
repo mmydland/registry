@@ -1,0 +1,59 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:goldustries:scanningcomputersensor;1",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:net:northstarcorp:sensorynetwork;1",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:oceanavigations:zenithsensordiagnostician;4",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration2",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:net:accenco:networkedsystemsensor;4",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:gov:ghostnite:sensorsensemodule;1",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

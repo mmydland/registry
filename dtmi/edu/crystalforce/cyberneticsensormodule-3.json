@@ -1,0 +1,49 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:crystalforce:cyberneticsensormodule;3",
+  "@type": "Interface",
+  "displayName": "Cyberneticsensormodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:org:ghostnite:telescopesystemmodule;4",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

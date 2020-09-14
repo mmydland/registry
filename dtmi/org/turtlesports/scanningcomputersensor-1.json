@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:turtlesports:scanningcomputersensor;1",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:cliffgold:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:org:goldustries:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    }
+  ]
+}

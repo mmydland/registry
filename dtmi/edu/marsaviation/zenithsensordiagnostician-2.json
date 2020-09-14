@@ -1,0 +1,64 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:marsaviation:zenithsensordiagnostician;2",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:net:microlutions:analyzingsensingcompassunit;3",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    }
+  ]
+}

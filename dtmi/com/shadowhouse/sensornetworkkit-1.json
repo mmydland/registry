@@ -1,0 +1,71 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:shadowhouse:sensornetworkkit;1",
+  "@type": "Interface",
+  "displayName": "Sensornetworkkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:alpite:analyzingsystemmechanism;2",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:crystalcoms:compunetworkedsensorscanner;4",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:com:crystalcoms:sensornetworkkit;6",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    }
+  ]
+}

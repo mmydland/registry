@@ -1,0 +1,88 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:crystalforce:sensingkitmechanism;5",
+  "@type": "Interface",
+  "displayName": "Sensingkitmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature2",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:org:hurricanetworks:sensorynetwork;8",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:blossomotors:monitoringpackunit;2",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:org:northstarcorp:sensornetworkkit;2",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    }
+  ]
+}

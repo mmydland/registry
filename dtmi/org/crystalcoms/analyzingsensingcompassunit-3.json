@@ -1,0 +1,102 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:crystalcoms:analyzingsensingcompassunit;3",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:org:microlutions:cyberneticaisensor;7",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:net:cliffgold:compudiagnostic;3",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    }
+  ]
+}

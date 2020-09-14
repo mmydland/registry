@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:accenco:aicompuunit;3",
+  "@type": "Interface",
+  "displayName": "Aicompuunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:org:crystalforce:sensingkitmechanism;4",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

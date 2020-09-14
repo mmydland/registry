@@ -1,0 +1,117 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:ghostnite:monitoringpackunit;3",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:edu:shadowhouse:aicompuunit;2",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:quaductions:locatorprocessor;5",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:com:hurricanetworks:compunetworkedsensorscanner;2",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    }
+  ]
+}

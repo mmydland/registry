@@ -1,0 +1,84 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:microlutions:locatorprocessor;12",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle2",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:com:blossomotors:telescopesystemmodule;1",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    },
+    {
+      "@type": "Component",
+      "name": "computerzenithkit",
+      "schema": "dtmi:net:ghostnite:computerzenithkit;3",
+      "displayName": "computerzenithkit",
+      "description": "computerzenithkit"
+    }
+  ]
+}

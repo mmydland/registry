@@ -1,0 +1,111 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:venusmotors:computerzenithkit;6",
+  "@type": "Interface",
+  "displayName": "Computerzenithkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature2",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:gov:ghostnite:sensorsensemodule;1",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:org:accenco:locatorprocessor;3",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:com:alpite:telescopesystemmodule;1",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

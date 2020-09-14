@@ -1,0 +1,74 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:oceanavigations:compunetworkedsensorscanner;5",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "computerzenithkit",
+      "schema": "dtmi:net:cliffgold:computerzenithkit;3",
+      "displayName": "computerzenithkit",
+      "description": "computerzenithkit"
+    }
+  ]
+}

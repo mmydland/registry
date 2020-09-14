@@ -1,0 +1,58 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:microlutions:sensorynetwork;3",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:crystalcoms:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:edu:crystalforce:aicompuunit;2",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    }
+  ]
+}

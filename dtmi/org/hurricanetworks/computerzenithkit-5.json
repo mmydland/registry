@@ -1,0 +1,75 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:hurricanetworks:computerzenithkit;5",
+  "@type": "Interface",
+  "displayName": "Computerzenithkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure3",
+      "request": {
+        "name": "targetsetPressure3",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:gov:shadowhouse:sensingkitmechanism;3",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

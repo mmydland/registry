@@ -1,0 +1,54 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:phantasmentertainment:scanningsensingcompassnetwork;1",
+  "@type": "Interface",
+  "displayName": "Scanningsensingcompassnetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:org:greenlife:zenithsensordiagnostician;1",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    }
+  ]
+}

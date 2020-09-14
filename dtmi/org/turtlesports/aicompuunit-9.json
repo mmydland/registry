@@ -1,0 +1,57 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:turtlesports:aicompuunit;9",
+  "@type": "Interface",
+  "displayName": "Aicompuunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    }
+  ]
+}

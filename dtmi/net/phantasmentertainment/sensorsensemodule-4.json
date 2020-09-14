@@ -1,0 +1,82 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:phantasmentertainment:sensorsensemodule;4",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:org:seedrecords:cyberneticaisensor;1",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:gov:venusmotors:scanningcomputersensor;2",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    }
+  ]
+}

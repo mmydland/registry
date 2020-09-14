@@ -1,0 +1,70 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:goldustries:compudiagnostic;9",
+  "@type": "Interface",
+  "displayName": "Compudiagnostic",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticsensormodule",
+      "schema": "dtmi:gov:cliffgold:cyberneticsensormodule;5",
+      "displayName": "cyberneticsensormodule",
+      "description": "cyberneticsensormodule"
+    }
+  ]
+}

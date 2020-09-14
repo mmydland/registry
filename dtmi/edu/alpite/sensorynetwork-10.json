@@ -1,0 +1,70 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:alpite:sensorynetwork;10",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity2",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:gov:greenlife:aisensoryprocessor;3",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "laptopcomputerizedprobepack",
+      "schema": "dtmi:gov:shadowhouse:laptopcomputerizedprobepack;6",
+      "displayName": "laptopcomputerizedprobepack",
+      "description": "laptopcomputerizedprobepack"
+    }
+  ]
+}

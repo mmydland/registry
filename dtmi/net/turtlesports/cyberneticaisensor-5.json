@@ -1,0 +1,69 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:turtlesports:cyberneticaisensor;5",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:gov:marsaviation:sensorynetwork;1",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    },
+    {
+      "@type": "Component",
+      "name": "laptopcomputerizedprobepack",
+      "schema": "dtmi:com:crystalcoms:laptopcomputerizedprobepack;2",
+      "displayName": "laptopcomputerizedprobepack",
+      "description": "laptopcomputerizedprobepack"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:seedrecords:analyzingsystemmechanism;2",
+  "@type": "Interface",
+  "displayName": "Analyzingsystemmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    }
+  ]
+}

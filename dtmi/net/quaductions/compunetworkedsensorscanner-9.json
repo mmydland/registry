@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:quaductions:compunetworkedsensorscanner;9",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:com:accenco:telescopesystemmodule;6",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

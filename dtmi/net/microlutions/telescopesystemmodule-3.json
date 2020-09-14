@@ -1,0 +1,108 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:microlutions:telescopesystemmodule;3",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature2",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:northstarcorp:locatorprocessor;2",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:edu:blossomotors:scanningsensingcompassnetwork;1",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    }
+  ]
+}

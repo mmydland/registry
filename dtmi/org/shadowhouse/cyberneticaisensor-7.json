@@ -1,0 +1,102 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:shadowhouse:cyberneticaisensor;7",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle2",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration2",
+      "request": {
+        "name": "targetsetAcceleration2",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:org:marsaviation:aisensoryprocessor;7",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    }
+  ]
+}

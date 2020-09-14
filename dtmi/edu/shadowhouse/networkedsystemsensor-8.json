@@ -1,0 +1,69 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:shadowhouse:networkedsystemsensor;8",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:org:venusmotors:analyzingsensingcompassunit;3",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    }
+  ]
+}

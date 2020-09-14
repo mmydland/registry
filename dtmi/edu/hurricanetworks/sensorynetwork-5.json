@@ -1,0 +1,77 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:hurricanetworks:sensorynetwork;5",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:edu:accenco:scanningcomputersensor;6",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:edu:alpite:sensorsensemodule;7",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

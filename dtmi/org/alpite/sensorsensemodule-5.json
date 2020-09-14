@@ -1,0 +1,102 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:alpite:sensorsensemodule;5",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle2",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration2",
+      "request": {
+        "name": "targetsetAcceleration2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:org:cliffgold:zenithsensordiagnostician;2",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:net:blossomotors:scanningsensingcompassnetwork;1",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    }
+  ]
+}

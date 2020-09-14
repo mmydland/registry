@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:crystalforce:analyzingsensingcompassunit;2",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:gov:microlutions:sensorsensemodule;2",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:org:hurricanetworks:sensingkitmechanism;1",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

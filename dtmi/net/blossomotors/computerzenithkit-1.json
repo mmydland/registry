@@ -1,0 +1,115 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:blossomotors:computerzenithkit;1",
+  "@type": "Interface",
+  "displayName": "Computerzenithkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:org:phantasmentertainment:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:org:cliffgold:telescopesystemmodule;1",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:gov:accenco:locatorprocessor;1",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:cliffgold:compunetworkedsensorscanner;3",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:org:accenco:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:net:crystalcoms:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    }
+  ]
+}

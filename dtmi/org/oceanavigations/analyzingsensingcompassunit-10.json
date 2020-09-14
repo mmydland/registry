@@ -1,0 +1,66 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:oceanavigations:analyzingsensingcompassunit;10",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:phantasmentertainment:locatorprocessor;13",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

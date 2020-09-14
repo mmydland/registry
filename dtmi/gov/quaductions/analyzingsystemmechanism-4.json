@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:quaductions:analyzingsystemmechanism;4",
+  "@type": "Interface",
+  "displayName": "Analyzingsystemmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:goldustries:locatorprocessor;5",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

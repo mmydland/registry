@@ -1,0 +1,60 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:crystalforce:sensingkitmechanism;8",
+  "@type": "Interface",
+  "displayName": "Sensingkitmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "boolean"
+      }
+    }
+  ]
+}

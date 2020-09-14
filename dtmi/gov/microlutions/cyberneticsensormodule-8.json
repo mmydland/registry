@@ -1,0 +1,80 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:microlutions:cyberneticsensormodule;8",
+  "@type": "Interface",
+  "displayName": "Cyberneticsensormodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:net:blossomotors:analyzingsensingcompassunit;5",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:northstarcorp:locatorprocessor;6",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:com:marsaviation:sensorynetwork;5",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

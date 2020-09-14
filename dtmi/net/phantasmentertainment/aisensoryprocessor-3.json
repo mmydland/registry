@@ -1,0 +1,91 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:phantasmentertainment:aisensoryprocessor;3",
+  "@type": "Interface",
+  "displayName": "Aisensoryprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity2",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity3",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "string"
+      }
+    }
+  ]
+}

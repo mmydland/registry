@@ -1,0 +1,65 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:greenlife:locatorprocessor;10",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration2",
+      "request": {
+        "name": "targetsetAcceleration2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "dateTime"
+      }
+    }
+  ]
+}

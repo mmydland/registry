@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:crystalforce:networkedsystemsensor;2",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:edu:ghostnite:aicompuunit;2",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:net:microlutions:analyzingsensingcompassunit;2",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    }
+  ]
+}

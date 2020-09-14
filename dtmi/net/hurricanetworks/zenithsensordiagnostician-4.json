@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:hurricanetworks:zenithsensordiagnostician;4",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:com:ghostnite:sensorsensemodule;9",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:crystalcoms:locatorprocessor;10",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness3",
+      "request": {
+        "name": "targetsetBrightness3",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:org:phantasmentertainment:analyzingsystemmechanism;6",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

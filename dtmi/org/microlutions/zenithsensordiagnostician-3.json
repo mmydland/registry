@@ -1,0 +1,67 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:microlutions:zenithsensordiagnostician;3",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:com:alpite:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor2",
+      "schema": "dtmi:edu:accenco:aisensoryprocessor;5",
+      "displayName": "aisensoryprocessor2",
+      "description": "aisensoryprocessor2"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:seedrecords:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

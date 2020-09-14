@@ -1,0 +1,79 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:crystalcoms:zenithsensingcomputerlaptop;4",
+  "@type": "Interface",
+  "displayName": "Zenithsensingcomputerlaptop",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:gov:greenlife:cyberneticaisensor;2",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:net:marsaviation:aisensoryprocessor;3",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    }
+  ]
+}

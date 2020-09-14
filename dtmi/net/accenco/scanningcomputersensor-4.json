@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:accenco:scanningcomputersensor;4",
+  "@type": "Interface",
+  "displayName": "Scanningcomputersensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity2",
+      "request": {
+        "name": "targetsetIntensity2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:net:crystalcoms:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit2",
+      "schema": "dtmi:gov:seedrecords:sensornetworkkit;1",
+      "displayName": "sensornetworkkit2",
+      "description": "sensornetworkkit2"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:blossomotors:locatorprocessor;3",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

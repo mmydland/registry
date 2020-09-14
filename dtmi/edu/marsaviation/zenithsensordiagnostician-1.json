@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:marsaviation:zenithsensordiagnostician;1",
+  "@type": "Interface",
+  "displayName": "Zenithsensordiagnostician",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature2",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:org:phantasmentertainment:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:gov:greenlife:scanningsensingcompassnetwork;1",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    }
+  ]
+}

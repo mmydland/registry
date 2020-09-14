@@ -1,0 +1,75 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:quaductions:compudiagnostic;5",
+  "@type": "Interface",
+  "displayName": "Compudiagnostic",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:gov:cliffgold:aisensoryprocessor;2",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorynetwork",
+      "schema": "dtmi:org:alpite:sensorynetwork;2",
+      "displayName": "sensorynetwork",
+      "description": "sensorynetwork"
+    }
+  ]
+}

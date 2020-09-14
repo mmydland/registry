@@ -1,0 +1,93 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:accenco:computerzenithkit;2",
+  "@type": "Interface",
+  "displayName": "Computerzenithkit",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature2",
+      "request": {
+        "name": "targetsetTemperature2",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:org:venusmotors:zenithsensordiagnostician;2",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:org:turtlesports:compudiagnostic;3",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    }
+  ]
+}

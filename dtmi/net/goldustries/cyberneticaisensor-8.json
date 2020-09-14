@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:goldustries:cyberneticaisensor;8",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensingcomputerlaptop",
+      "schema": "dtmi:com:microlutions:zenithsensingcomputerlaptop;5",
+      "displayName": "zenithsensingcomputerlaptop",
+      "description": "zenithsensingcomputerlaptop"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:edu:accenco:sensorsensemodule;3",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

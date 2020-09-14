@@ -1,0 +1,77 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:shadowhouse:cyberneticsensormodule;2",
+  "@type": "Interface",
+  "displayName": "Cyberneticsensormodule",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:net:northstarcorp:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:net:marsaviation:zenithsensordiagnostician;4",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    }
+  ]
+}

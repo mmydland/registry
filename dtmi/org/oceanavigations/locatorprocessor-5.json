@@ -1,0 +1,99 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:oceanavigations:locatorprocessor;5",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:edu:seedrecords:telescopesystemmodule;2",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:org:goldustries:monitoringpackunit;3",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    }
+  ]
+}

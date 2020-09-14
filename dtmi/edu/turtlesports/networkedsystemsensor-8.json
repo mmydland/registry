@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:turtlesports:networkedsystemsensor;8",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:edu:crystalforce:sensorsensemodule;2",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:net:marsaviation:monitoringpackunit;1",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    }
+  ]
+}

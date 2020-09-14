@@ -1,0 +1,105 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:blossomotors:networkedsystemsensor;7",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness3",
+      "request": {
+        "name": "targetsetBrightness3",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:com:cliffgold:compunetworkedsensorscanner;2",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticsensormodule",
+      "schema": "dtmi:org:blossomotors:cyberneticsensormodule;5",
+      "displayName": "cyberneticsensormodule",
+      "description": "cyberneticsensormodule"
+    }
+  ]
+}

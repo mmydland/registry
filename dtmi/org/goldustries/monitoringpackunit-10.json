@@ -1,0 +1,80 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:goldustries:monitoringpackunit;10",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature2",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature3",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:gov:alpite:sensorsensemodule;1",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:org:crystalforce:compunetworkedsensorscanner;6",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:com:crystalforce:telescopesystemmodule;4",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

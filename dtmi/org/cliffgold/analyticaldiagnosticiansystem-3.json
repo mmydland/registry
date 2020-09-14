@@ -1,0 +1,80 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:cliffgold:analyticaldiagnosticiansystem;3",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:com:turtlesports:monitoringpackunit;4",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    }
+  ]
+}

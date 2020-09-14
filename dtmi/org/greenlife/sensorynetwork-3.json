@@ -1,0 +1,43 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:greenlife:sensorynetwork;3",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:com:marsaviation:compudiagnostic;1",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    }
+  ]
+}

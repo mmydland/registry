@@ -1,0 +1,46 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:northstarcorp:locatorprocessor;2",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:org:ghostnite:compunetworkedsensorscanner;3",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:net:northstarcorp:scanningcomputersensor;5",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    }
+  ]
+}

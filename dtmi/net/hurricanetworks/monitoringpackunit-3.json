@@ -1,0 +1,93 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:hurricanetworks:monitoringpackunit;3",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate2",
+      "request": {
+        "name": "targetsetFlowRate2",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:org:oceanavigations:compunetworkedsensorscanner;4",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    }
+  ]
+}

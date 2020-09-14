@@ -1,0 +1,73 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:venusmotors:sensorsensemodule;5",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:org:oceanavigations:scanningsensingcompassnetwork;2",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:edu:ghostnite:locatorprocessor;2",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

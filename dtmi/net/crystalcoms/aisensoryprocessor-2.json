@@ -1,0 +1,56 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:crystalcoms:aisensoryprocessor;2",
+  "@type": "Interface",
+  "displayName": "Aisensoryprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:gov:hurricanetworks:zenithsensordiagnostician;1",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    }
+  ]
+}

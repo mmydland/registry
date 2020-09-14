@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:accenco:sensornetworkkit;10",
+  "@type": "Interface",
+  "displayName": "Sensornetworkkit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:org:oceanavigations:scanningsensingcompassnetwork;1",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    }
+  ]
+}

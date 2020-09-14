@@ -1,0 +1,80 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:ghostnite:locatorprocessor;9",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity2",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:net:greenlife:networkedsystemsensor;1",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:net:microlutions:compunetworkedsensorscanner;5",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsensingcompassunit",
+      "schema": "dtmi:com:microlutions:analyzingsensingcompassunit;1",
+      "displayName": "analyzingsensingcompassunit",
+      "description": "analyzingsensingcompassunit"
+    }
+  ]
+}

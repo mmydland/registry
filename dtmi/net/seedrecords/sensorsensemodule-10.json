@@ -1,0 +1,78 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:seedrecords:sensorsensemodule;10",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness3",
+      "schema": "string"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:gov:accenco:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:net:quaductions:compunetworkedsensorscanner;4",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    }
+  ]
+}

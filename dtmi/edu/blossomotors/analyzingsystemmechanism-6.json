@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:blossomotors:analyzingsystemmechanism;6",
+  "@type": "Interface",
+  "displayName": "Analyzingsystemmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:com:marsaviation:monitoringpackunit;4",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:net:crystalforce:networkedsystemsensor;7",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    }
+  ]
+}

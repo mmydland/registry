@@ -1,0 +1,52 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:hurricanetworks:analyticaldiagnosticiansystem;5",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    }
+  ]
+}

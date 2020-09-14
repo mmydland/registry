@@ -1,0 +1,81 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:crystalcoms:scanningsensingcompassnetwork;1",
+  "@type": "Interface",
+  "displayName": "Scanningsensingcompassnetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure2",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:com:goldustries:aisensoryprocessor;1",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:edu:blossomotors:cyberneticaisensor;1",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    }
+  ]
+}

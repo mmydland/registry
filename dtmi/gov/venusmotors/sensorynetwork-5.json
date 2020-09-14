@@ -1,0 +1,96 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:venusmotors:sensorynetwork;5",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:org:crystalcoms:zenithsensordiagnostician;3",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:net:goldustries:sensingkitmechanism;8",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

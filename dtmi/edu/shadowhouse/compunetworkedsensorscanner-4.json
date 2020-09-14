@@ -1,0 +1,73 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:shadowhouse:compunetworkedsensorscanner;4",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "tiltAngle1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:gov:turtlesports:aisensoryprocessor;4",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensingcomputerlaptop",
+      "schema": "dtmi:org:seedrecords:zenithsensingcomputerlaptop;4",
+      "displayName": "zenithsensingcomputerlaptop",
+      "description": "zenithsensingcomputerlaptop"
+    }
+  ]
+}

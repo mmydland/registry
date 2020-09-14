@@ -1,0 +1,74 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:hurricanetworks:sensingkitmechanism;4",
+  "@type": "Interface",
+  "displayName": "Sensingkitmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:gov:marsaviation:telescopesystemmodule;3",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

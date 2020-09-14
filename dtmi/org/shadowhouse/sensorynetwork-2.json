@@ -1,0 +1,68 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:shadowhouse:sensorynetwork;2",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure1",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:edu:accenco:aisensoryprocessor;4",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:com:turtlesports:cyberneticaisensor;5",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:microlutions:locatorprocessor;13",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:org:crystalforce:aisensoryprocessor;5",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:gov:quaductions:monitoringpackunit;5",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    }
+  ]
+}

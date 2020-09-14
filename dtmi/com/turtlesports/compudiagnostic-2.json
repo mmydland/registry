@@ -1,0 +1,79 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:turtlesports:compudiagnostic;2",
+  "@type": "Interface",
+  "displayName": "Compudiagnostic",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure2",
+      "schema": "double"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:org:goldustries:telescopesystemmodule;1",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

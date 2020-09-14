@@ -1,0 +1,50 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:phantasmentertainment:networkedsystemsensor;1",
+  "@type": "Interface",
+  "displayName": "Networkedsystemsensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:net:blossomotors:zenithsensordiagnostician;1",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:alpite:analyzingsystemmechanism;2",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

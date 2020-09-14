@@ -1,0 +1,53 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:hurricanetworks:analyzingsystemmechanism;8",
+  "@type": "Interface",
+  "displayName": "Analyzingsystemmechanism",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "time"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:net:ghostnite:monitoringpackunit;11",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    },
+    {
+      "@type": "Component",
+      "name": "analyticaldiagnosticiansystem",
+      "schema": "dtmi:gov:greenlife:analyticaldiagnosticiansystem;5",
+      "displayName": "analyticaldiagnosticiansystem",
+      "description": "analyticaldiagnosticiansystem"
+    }
+  ]
+}

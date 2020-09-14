@@ -1,0 +1,86 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:shadowhouse:sensorynetwork;9",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "date"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "intensity1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness2",
+      "request": {
+        "name": "targetsetBrightness2",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:edu:crystalcoms:sensorsensemodule;3",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    },
+    {
+      "@type": "Component",
+      "name": "monitoringpackunit",
+      "schema": "dtmi:com:turtlesports:monitoringpackunit;4",
+      "displayName": "monitoringpackunit",
+      "description": "monitoringpackunit"
+    }
+  ]
+}

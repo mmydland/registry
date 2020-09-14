@@ -1,0 +1,83 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:ghostnite:analyzingsensingcompassunit;7",
+  "@type": "Interface",
+  "displayName": "Analyzingsensingcompassunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:com:quaductions:analyzingsystemmechanism;3",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:org:shadowhouse:compudiagnostic;1",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    },
+    {
+      "@type": "Component",
+      "name": "laptopcomputerizedprobepack",
+      "schema": "dtmi:net:seedrecords:laptopcomputerizedprobepack;3",
+      "displayName": "laptopcomputerizedprobepack",
+      "description": "laptopcomputerizedprobepack"
+    }
+  ]
+}

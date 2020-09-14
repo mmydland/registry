@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:marsaviation:analyticaldiagnosticiansystem;2",
+  "@type": "Interface",
+  "displayName": "Analyticaldiagnosticiansystem",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure2",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration2",
+      "request": {
+        "name": "targetsetAcceleration2",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "zenithsensordiagnostician",
+      "schema": "dtmi:org:cliffgold:zenithsensordiagnostician;1",
+      "displayName": "zenithsensordiagnostician",
+      "description": "zenithsensordiagnostician"
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:com:northstarcorp:locatorprocessor;4",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    }
+  ]
+}

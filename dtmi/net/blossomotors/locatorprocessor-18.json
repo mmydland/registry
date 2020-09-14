@@ -1,0 +1,71 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:blossomotors:locatorprocessor;18",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure2",
+      "request": {
+        "name": "targetsetPressure2",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:org:marsaviation:scanningcomputersensor;2",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:edu:goldustries:sensingkitmechanism;4",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    }
+  ]
+}

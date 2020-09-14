@@ -1,0 +1,76 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:phantasmentertainment:scanningsensingcompassnetwork;6",
+  "@type": "Interface",
+  "displayName": "Scanningsensingcompassnetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "locatorprocessor",
+      "schema": "dtmi:org:oceanavigations:locatorprocessor;9",
+      "displayName": "locatorprocessor",
+      "description": "locatorprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "cyberneticaisensor",
+      "schema": "dtmi:edu:shadowhouse:cyberneticaisensor;1",
+      "displayName": "cyberneticaisensor",
+      "description": "cyberneticaisensor"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:crystalcoms:monitoringpackunit;7",
+  "@type": "Interface",
+  "displayName": "Monitoringpackunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness2",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "time"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "float"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "string"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "telescopesystemmodule",
+      "schema": "dtmi:gov:marsaviation:telescopesystemmodule;6",
+      "displayName": "telescopesystemmodule",
+      "description": "telescopesystemmodule"
+    }
+  ]
+}

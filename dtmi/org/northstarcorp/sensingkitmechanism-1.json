@@ -1,0 +1,72 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:northstarcorp:sensingkitmechanism;1",
+  "@type": "Interface",
+  "displayName": "Sensingkitmechanism",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature1",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle2",
+      "request": {
+        "name": "targetsetTiltAngle2",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:turtlesports:analyzingsystemmechanism;2",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

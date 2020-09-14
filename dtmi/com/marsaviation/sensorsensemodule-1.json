@@ -1,0 +1,63 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:com:marsaviation:sensorsensemodule;1",
+  "@type": "Interface",
+  "displayName": "Sensorsensemodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration2",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setPressure",
+      "request": {
+        "name": "targetsetPressure",
+        "schema": "time"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensornetworkkit",
+      "schema": "dtmi:org:hurricanetworks:sensornetworkkit;1",
+      "displayName": "sensornetworkkit",
+      "description": "sensornetworkkit"
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:net:alpite:analyzingsystemmechanism;1",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    }
+  ]
+}

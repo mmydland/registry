@@ -1,0 +1,85 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:crystalcoms:aicompuunit;3",
+  "@type": "Interface",
+  "displayName": "Aicompuunit",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "integer"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature",
+      "schema": "string"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "temperature1",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "date"
+    },
+    {
+      "@type": "Command",
+      "name": "setFlowRate",
+      "request": {
+        "name": "targetsetFlowRate",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "analyzingsystemmechanism",
+      "schema": "dtmi:com:accenco:analyzingsystemmechanism;2",
+      "displayName": "analyzingsystemmechanism",
+      "description": "analyzingsystemmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningcomputersensor",
+      "schema": "dtmi:edu:turtlesports:scanningcomputersensor;3",
+      "displayName": "scanningcomputersensor",
+      "description": "scanningcomputersensor"
+    },
+    {
+      "@type": "Component",
+      "name": "scanningsensingcompassnetwork",
+      "schema": "dtmi:org:northstarcorp:scanningsensingcompassnetwork;3",
+      "displayName": "scanningsensingcompassnetwork",
+      "description": "scanningsensingcompassnetwork"
+    }
+  ]
+}

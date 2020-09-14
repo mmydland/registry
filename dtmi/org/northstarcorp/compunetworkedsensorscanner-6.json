@@ -1,0 +1,73 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:northstarcorp:compunetworkedsensorscanner;6",
+  "@type": "Interface",
+  "displayName": "Compunetworkedsensorscanner",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "float"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "duration"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness1",
+      "schema": "integer"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aisensoryprocessor",
+      "schema": "dtmi:edu:accenco:aisensoryprocessor;3",
+      "displayName": "aisensoryprocessor",
+      "description": "aisensoryprocessor"
+    },
+    {
+      "@type": "Component",
+      "name": "compunetworkedsensorscanner",
+      "schema": "dtmi:edu:hurricanetworks:compunetworkedsensorscanner;2",
+      "displayName": "compunetworkedsensorscanner",
+      "description": "compunetworkedsensorscanner"
+    }
+  ]
+}

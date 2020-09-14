@@ -1,0 +1,49 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:goldustries:cyberneticaisensor;10",
+  "@type": "Interface",
+  "displayName": "Cyberneticaisensor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "pressure",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity1",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Property",
+      "name": "intensity2",
+      "schema": "long"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure1",
+      "schema": "float"
+    },
+    {
+      "@type": "Command",
+      "name": "setAcceleration",
+      "request": {
+        "name": "targetsetAcceleration",
+        "schema": "boolean"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "integer"
+      }
+    }
+  ]
+}

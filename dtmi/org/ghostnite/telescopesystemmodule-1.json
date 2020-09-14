@@ -1,0 +1,61 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:org:ghostnite:telescopesystemmodule;1",
+  "@type": "Interface",
+  "displayName": "Telescopesystemmodule",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "intensity",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "pressure",
+      "schema": "duration"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "date"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism",
+      "schema": "dtmi:gov:seedrecords:sensingkitmechanism;1",
+      "displayName": "sensingkitmechanism",
+      "description": "sensingkitmechanism"
+    },
+    {
+      "@type": "Component",
+      "name": "sensingkitmechanism2",
+      "schema": "dtmi:gov:seedrecords:sensingkitmechanism;1",
+      "displayName": "sensingkitmechanism2",
+      "description": "sensingkitmechanism2"
+    }
+  ]
+}

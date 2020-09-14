@@ -1,0 +1,58 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:net:venusmotors:computerzenithkit;1",
+  "@type": "Interface",
+  "displayName": "Computerzenithkit",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "brightness",
+      "schema": "duration"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate",
+      "schema": "date"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "temperature",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "integer"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "networkedsystemsensor",
+      "schema": "dtmi:net:seedrecords:networkedsystemsensor;2",
+      "displayName": "networkedsystemsensor",
+      "description": "networkedsystemsensor"
+    },
+    {
+      "@type": "Component",
+      "name": "sensorsensemodule",
+      "schema": "dtmi:net:goldustries:sensorsensemodule;3",
+      "displayName": "sensorsensemodule",
+      "description": "sensorsensemodule"
+    }
+  ]
+}

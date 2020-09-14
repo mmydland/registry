@@ -1,0 +1,91 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:gov:goldustries:locatorprocessor;7",
+  "@type": "Interface",
+  "displayName": "Locatorprocessor",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "flowRate",
+      "schema": "double"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "acceleration",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "tiltAngle",
+      "schema": "boolean"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "flowRate1",
+      "schema": "float"
+    },
+    {
+      "@type": "Property",
+      "name": "flowRate2",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "double"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "dateTime"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setTemperature",
+      "request": {
+        "name": "targetsetTemperature",
+        "schema": "duration"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setIntensity",
+      "request": {
+        "name": "targetsetIntensity",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "aicompuunit",
+      "schema": "dtmi:edu:greenlife:aicompuunit;4",
+      "displayName": "aicompuunit",
+      "description": "aicompuunit"
+    },
+    {
+      "@type": "Component",
+      "name": "compudiagnostic",
+      "schema": "dtmi:org:shadowhouse:compudiagnostic;1",
+      "displayName": "compudiagnostic",
+      "description": "compudiagnostic"
+    },
+    {
+      "@type": "Component",
+      "name": "laptopcomputerizedprobepack",
+      "schema": "dtmi:edu:northstarcorp:laptopcomputerizedprobepack;5",
+      "displayName": "laptopcomputerizedprobepack",
+      "description": "laptopcomputerizedprobepack"
+    }
+  ]
+}

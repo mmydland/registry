@@ -1,0 +1,44 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:edu:turtlesports:sensorynetwork;3",
+  "@type": "Interface",
+  "displayName": "Sensorynetwork",
+  "contents": [
+    {
+      "@type": "Telemetry",
+      "name": "brightness",
+      "schema": "time"
+    },
+    {
+      "@type": "Telemetry",
+      "name": "brightness1",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "brightness2",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "acceleration",
+      "schema": "long"
+    },
+    {
+      "@type": "Command",
+      "name": "setTiltAngle",
+      "request": {
+        "name": "targetsetTiltAngle",
+        "schema": "long"
+      }
+    },
+    {
+      "@type": "Command",
+      "name": "setBrightness",
+      "request": {
+        "name": "targetsetBrightness",
+        "schema": "boolean"
+      }
+    }
+  ]
+}
