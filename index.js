@@ -1,18 +1,6 @@
-(async () => {
-  /**
- * @description "Converts DTMI to folder/file convention"
- * @param {string} dtmi
- * @returns {(string,string)}
- */
-  const dtmi2path = (dtmi) => {
-    const idAndVersion = dtmi.toLowerCase().split(';')
-    const ids = idAndVersion[0].split(':')
-    const fileName = `${ids[ids.length - 1]}-${idAndVersion[1]}.json`
-    ids.pop()
-    const modelFolder = ids.join('/')
-    return { modelFolder, fileName }
-  }
+import { dtmi2path } from './repo-convention.js'
 
+(async () => {
   const gbid = (id) => {
     const el = document.getElementById(id)
     if (el === null) {
