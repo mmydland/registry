@@ -1,4 +1,4 @@
-import { dtmi2path } from './repo-convention.js'
+import { dtmi2path } from './dtmi2path.js'
 
 (async () => {
   const gbid = (id) => {
