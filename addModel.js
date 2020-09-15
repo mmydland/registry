@@ -1,21 +1,29 @@
 import fs from 'fs'
 import path from 'path'
 import mkdirp from 'mkdirp'
-import { dtmi2path, getDependencies } from './repo-convention.js'
+import { dtmi2path, getDependencies, checkIds } from './repo-convention.js'
+import { execSync } from 'child_process'
+
+const parseWithDotNet = file => {
+  execSync(`dtdl2-validator /f=${file} /resolver=local`, { stdio: 'inherit' })
+}
 
 /**
+ * @description Adds a model to the repo. Validates ids, dependencies and set the right folder/file name
  * @param {string} file
  */
-const addModel = (file) => {
+const addModel = async (file) => {
   if (!fs.existsSync(file)) {
     console.error('file not found:' + file)
     process.exit()
   }
+  await parseWithDotNet(file)
+
   const rootJson = JSON.parse(fs.readFileSync(file, 'utf-8'))
 
   if (rootJson['@context'] && rootJson['@context'] === 'dtmi:dtdl:context;2') {
+    checkIds(rootJson)
     const id = rootJson['@id']
-
     const deps = getDependencies(rootJson)
     deps.forEach(d => {
       const { modelFolder, fileName } = dtmi2path(d)

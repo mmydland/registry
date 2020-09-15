@@ -1,3 +1,5 @@
+import jsonata from 'jsonata'
+
 export /**
  * @description Converts DTMI to dtmi/com/example/device-1.json path
  * @param {string} dtmi
@@ -36,4 +38,25 @@ const getDependencies = rootJson => {
     })
   }
   return deps
+}
+
+export/**
+ * @description Validates all internal IDs follow the namepspace set by the root id
+ * @param {any} dtdlJson
+ */
+const checkIds = dtdlJson => {
+  const rootId = dtdlJson['@id']
+  console.log(`checkIds: validating root ${rootId}`)
+  const ids = jsonata('**."@id"').evaluate(dtdlJson)
+  if (Array.isArray(ids)) {
+    ids.forEach(id => {
+      console.log('found: ' + id)
+      if (!id.split(';')[0].startsWith(rootId.split(';')[0])) {
+        throw new Error(`ERROR: Document id ${id} does not satisfy the root id ${rootId}`)
+      }
+    })
+    console.log(`checkIds: validated ${ids.length} ids`)
+  } else {
+    console.log('checkIds: ids not found')
+  }
 }
