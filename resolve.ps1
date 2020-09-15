@@ -1,11 +1,25 @@
-$repo="https://iotmodels.github.io/registry/"
-$indexJson = Invoke-WebRequest -URI $repo"model-index.json"
-$index = ConvertFrom-JSON -InputObject $indexJson
-$model = $index.'dtmi:my:device:model;1'
-$path = $repo + $model.path
-$rootJson = Invoke-WebRequest -URI $path
+function Dtmi2Path
+{
+    param (
+        [string] $dtmi
+    )
+    $idAndVersion = $dtmi.ToLowerInvariant().Split(';')
+    [string[]] $segments = $idAndVersion[0].Split(':')
+    $lastSegment = $segments[$segments.Length-1]
+    $version = $idAndVersion[1]
+    $fileName = "$lastSegment-$version.json"
+    $segments = $segments[0..($segments.length-2)]
+    $path =[String]::Join("/", $segments)
+    return "$path/$fileName"
+}
 
-$dtdl = ConvertFrom-JSON -InputObject $rootJson.Content
-Write-Output $dtdl.'@id' $path
-$model.depends | ForEach-Object { Write-Output "$model[$_].path"}
+$repo="https://iotmodels.github.io/registry/"
+$dtmi="dtmi:my:device:model;3"
+$path = Dtmi2Path($dtmi)
+
+$modelJson = Invoke-WebRequest -URI $repo$path
+$model = ConvertFrom-Json -InputObject @modelJson
+Write-Host $model.'@id'
+$model.'contents' | ft
+
 

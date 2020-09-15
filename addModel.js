@@ -1,46 +1,7 @@
-const fs = require('fs')
-const path = require('path')
-const mkdirp = require('mkdirp')
-
-/**
- * @description "Converts DTMI to folder/file convention"
- * @param {string} dtmi
- * @returns {(string,string)}
- */
-const dtmi2path = (dtmi) => {
-  const idAndVersion = dtmi.toLowerCase().split(';')
-  const ids = idAndVersion[0].split(':')
-  const fileName = `${ids[ids.length - 1]}-${idAndVersion[1]}.json`
-  ids.pop()
-  const modelFolder = ids.join('/')
-  return { modelFolder, fileName }
-}
-
-/**
- * @param {{ extends: any[]; contents: any[]; }} rootJson
- * @returns {Array<string>}
- */
-const getDependencies = (rootJson) => {
-  const deps = []
-  if (rootJson.extends) {
-    if (Array.isArray(rootJson.extends)) {
-      rootJson.extends.forEach(e => deps.push(e))
-    } else {
-      deps.push(rootJson.extends)
-    }
-  }
-  if (rootJson.contents) {
-    const comps = rootJson.contents.filter(c => c['@type'] === 'Component')
-    comps.forEach(c => {
-      if (typeof c.schema !== 'object') {
-        if (deps.indexOf(c.schema) === -1) {
-          deps.push(c.schema)
-        }
-      }
-    })
-  }
-  return deps
-}
+import fs from 'fs'
+import path from 'path'
+import mkdirp from 'mkdirp'
+import { dtmi2path, getDependencies } from './repo-convention.js'
 
 /**
  * @param {string} file
@@ -60,6 +21,11 @@ const addModel = (file) => {
       const { modelFolder, fileName } = dtmi2path(d)
       if (fs.existsSync(path.join(modelFolder, fileName))) {
         console.log(`Dependency ${d} found in the index`)
+        const model = JSON.parse(fs.readFileSync(path.join(modelFolder, fileName), 'utf-8'))
+        if (model['@id'] !== d) {
+          console.log(`ERROR: LowerCase issue with dependent id ${d}. Was ${model['@id']}. Aborting`)
+          process.exit()
+        }
       } else {
         console.error(`ERROR: Dependency ${d} NOT found. Aborting`)
         process.exit()
