@@ -27,9 +27,10 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.x
-
-      - run:
-          dotnet tool install --global dtdl2-validator
+      - name: Add private feed
+        run: |
+         dotnet nuget add source https://nuget.pkg.github.com/iotmodels/index.json -n GPR -u ridomin -p ${{ secrets.GHPackagesToken }} --store-password-in-clear-text
+         dotnet tool install --global dtdl2-validator --add-source https://nuget.pkg.github.com/iotmodels/index.json
       
       - name: Validate models edits
         run: .github/workflows/validate-models.sh ${{steps.files.outputs.added_modified}}
